@@ -1,0 +1,112 @@
+
+/* GENERAL */
+
+body {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Para centrarlo horizontalmente */
+    width: 100%;
+    font-family: "Roboto";
+}
+
+li {
+    list-style-type: none;
+}
+
+/* MENÚ PARA DESKTOP*/
+/* Contenedor principal */
+.container-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+/* Logo */
+.logo img {
+    height: 25px;
+}
+/* Navegación */
+nav {
+    flex: 1; /* Permite que el nav ocupe el espacio disponible */
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la izquierda */
+}
+.menu-all {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-all li {
+    margin: 0 20px; /* Espacio entre los elementos del menú */
+}
+.menu-opt a {
+    text-decoration: none;
+    color: #333;
+}
+.menu-opt a:hover{
+    color: #C10A18;
+}
+/* Botón de Login */
+.login button {
+    background-color: #C10A18;
+    border: 2px solid #C10A18;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login button:hover {
+    background-color: #F8F9FA;
+    border: 2px solid #C10A18;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login button a {
+    color: #F8F9FA;
+    text-decoration: none;
+}
+.login button:hover a {
+    color: #C10A18;
+    text-decoration: none;
+}
+.mobile-menu {
+    display: none; /* Ocultar en pantallas grandes */
+}
+
+/* MENÚ PARA MOVILES */
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+    }
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-text {
+    flex: 1;
+    margin-right: 20px;
+}
+.banner-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/**/
+
+
