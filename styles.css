@@ -18,6 +18,12 @@ h1 {
     color:#010828;
     margin-bottom: 0.5em;
 }
+h2 {
+    font-size: 1.5em;
+    color:#010828;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
 p {
     font-size: 1.2em;
     color: #777777;
@@ -27,6 +33,11 @@ p {
     margin-right: auto;
 }
 
+@media (max-width: 800px) {
+    p {
+        text-align: center;
+    }
+}
 /* MENÚ PARA DESKTOP*/
 /* Contenedor principal */
 .container-top {
@@ -40,7 +51,7 @@ p {
     height: 25px;
 }
 /* Navegación */
-nav {
+.menu-nav {
     flex: 1; /* Permite que el nav ocupe el espacio disponible */
     display: flex;
     justify-content: flex-end; /* Alinea los elementos a la izquierda */
@@ -184,9 +195,26 @@ nav {
 /* BANNER PARA MOVILES */
 
 @media (max-width: 800px) {
+    .container-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 60px 50px; /* Añade espacio alrededor del contenedor */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .banner-btn {
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+    }
     .banner-image img {
         width: 100%;
         height: auto;
-        display: none;
+        display: block;
     }
 }
+
+/* MAIN -  ARTÍCULOS */
+
