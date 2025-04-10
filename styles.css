@@ -5,11 +5,26 @@ body {
     max-width: 1200px; /* Ancho máximo */
     margin: 0 auto; /* Para centrarlo horizontalmente */
     width: 100%;
-    font-family: "Roboto";
+    font-family: "Lato";
 }
-
 li {
     list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 2em;
+    color:#010828;
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 1.2em;
+    color: #777777;
+    margin-bottom: 2em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* MENÚ PARA DESKTOP*/
@@ -39,33 +54,32 @@ nav {
     margin: 0 20px; /* Espacio entre los elementos del menú */
 }
 .menu-opt a {
-    text-decoration: none;
-    color: #333;
+    color: #333333;
 }
 .menu-opt a:hover{
-    color: #C10A18;
+    color: #c10a18;
 }
 /* Botón de Login */
 .login button {
-    background-color: #C10A18;
-    border: 2px solid #C10A18;
+    background-color: #c10a18;
+    border: 2px solid #c10a18;
     padding: 10px 30px;
     cursor: pointer;
     border-radius: 5px;
 }
 .login button:hover {
-    background-color: #F8F9FA;
-    border: 2px solid #C10A18;
+    background-color: #f8f9fA;
+    border: 2px solid #c10a18;
     padding: 10px 30px;
     cursor: pointer;
     border-radius: 5px;
 }
 .login button a {
-    color: #F8F9FA;
+    color: #f8f9fA;
     text-decoration: none;
 }
 .login button:hover a {
-    color: #C10A18;
+    color: #c10a18;
     text-decoration: none;
 }
 .mobile-menu {
@@ -74,7 +88,7 @@ nav {
 
 /* MENÚ PARA MOVILES */
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .logo img {
         height: 30px;
     }
@@ -93,20 +107,86 @@ nav {
 
 /* BANNER */
 
-.banner {
+.container-banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 60px 100px; /* Añade espacio alrededor del contenedor */
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.banner-text {
+
+.banner-info {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 40px;
 }
+
+.banner-text {
+    margin-bottom: 20px;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.banner-text p {
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.banner-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-chrome, .btn-firefox {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn-chrome {
+    background-color: #5167e2;
+    color: white;
+    border: 2px solid #5167e2;
+}
+
+.btn-chrome:hover {
+    background-color: #fff;
+    color: #5167e2;
+}
+
+.btn-firefox {
+    background-color: #ededed;
+    color: #777777;
+    border: 2px solid #ededed;
+}
+
+.btn-firefox:hover {
+    background-color: #f8f9fA;
+    border: 2px solid #777777;
+}
+
 .banner-image {
-    max-width: 100%;
-    height: auto;
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
 }
 
-/**/
+.banner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+/* BANNER PARA MOVILES */
 
+@media (max-width: 800px) {
+    .banner-image img {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+}
