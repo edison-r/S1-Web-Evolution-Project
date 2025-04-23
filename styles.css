@@ -82,6 +82,7 @@ p {
     font-size: var(--font-size-md);
     color: var(--light-gray);
     margin-bottom: var(--spacing-lg);
+    line-height: 25px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -125,6 +126,7 @@ p {
 .menu-opt a:hover{
     color: var(--dark-red);
 }
+
 /* Botón de Login */
 .login button {
     background-color: var(--dark-red);
@@ -177,7 +179,6 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-xxl); /* Añade espacio alrededor del contenedor */
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -192,12 +193,11 @@ p {
 
 .banner-text h1 {
     color: #333;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
 }
 
 .banner-text p {
     max-width: 500px;
-    line-height: 1.5;
 }
 
 .banner-btn {
@@ -233,11 +233,20 @@ p {
     border: 2px solid var(--dark-gray);
 }
 
-.image-wrapper {
-    display: flex;
-    position: relative;  
+.container-banner {
+    position: relative;
 }
 
+.banner-decorative-content {
+    position: absolute;
+    width: 35%;
+    height: 65%;
+    background-color: var(--primary-color);
+    border-radius: 40% 0 0 40%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 .banner-image {
     flex: 1;
     max-width: 500px;
@@ -250,21 +259,11 @@ p {
     display: block;
 }
 
-.banner-decorative-content {
-    position: absolute;
-    width: 30%;
-    height: 35%;
-    background-color: var(--primary-color);
-    border-radius: 50% 0 0 50%;
-    right: 0;
-    bottom: 35%;
-    z-index: -1;
-}
-
-/* BANNER PARA MOVILES */
+/* BANNER PARA TABLETS */
 
 @media (max-width: 900px) {
     .container-banner {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -272,6 +271,16 @@ p {
         padding: var(--spacing-xxl);
         max-width: 1200px;
         margin: 0 auto;
+    }
+    .banner-decorative-content {
+        position: absolute;
+        width: 65%;
+        height: 35%;
+        background-color: var(--primary-color);
+        border-radius: 0 0 0 40%;
+        right: 0;
+        bottom: 45%;
+        z-index: -1;
     }
     .banner-btn {
         justify-content: center;
@@ -283,42 +292,32 @@ p {
         height: auto;
         display: block;
     }
-
-    .banner-decorative-content {
-        position: absolute;
-        width: 40%;
-        height: 30%;
-        background-color: var(--primary-color);
-        border-radius: 0 0 0 40%;
-        right: 0;
-        bottom: 35%;
-        z-index: -1;
-    }
 }
+
 
 /* MAIN -  ARTÍCULOS */
 
 .container-articles {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-xxl);
     text-align: center;
 }
-/*
+
 .article-decorative-content {
     position: absolute;
-    width: 30%;
-    height: 35%;
+    width: 40%;
+    height: 40%;
     background-color: var(--primary-color);
     border-radius: 0 50% 50% 0;
     left: 0;
-    bottom: -50%;
+    bottom: 0;
     z-index: -1;
 }
-*/
+
 .resume p {
     max-width: 500px;
-    margin: 20px auto 50px;
 }
 
 /* Navegación */
@@ -327,11 +326,11 @@ p {
     justify-content: center;
     padding: var(--spacing-none);
     border-bottom: 1px solid var(--super-light-gray);
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-lg);
 }
 
 .articles-nav li {
-    margin: 0 1rem;
+    margin: 0 var(--spacing-lg);
 }
 
 .articles-nav a {
@@ -357,7 +356,7 @@ p {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    gap: 2rem;
+    gap: var(--spacing-lg);
     text-align: left;
 }
 
@@ -371,13 +370,13 @@ p {
 }
 
 .article h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    text-align: left;
 }
 
 .article p {
-    max-width: 400px;
-    margin-bottom: 1rem;
+    max-width: 500px;
 }
 
 /* Botón */
