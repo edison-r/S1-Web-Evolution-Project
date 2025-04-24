@@ -21,8 +21,8 @@ El proyecto consta de tres partes, cada una utilizando diferentes tecnologías p
 ## Estructura del Proyecto
 
 - **Parte 1: HTML y CSS Vanilla** 🚧 _en proceso_
-  - Carpeta: `html-css`
-  - Archivos: `index.html`, `styles.css`
+  - Carpeta: `img`
+  - Archivos: `index.html`, `styles.css`, `main.js`, `README.md`
 
 ## Instrucciones de Uso
 
