@@ -45,10 +45,11 @@
     --border-radius-lg: 12px;
 
     /* SHADOWS */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 2px 4px rgba(82, 101, 225, 0.1);
+    --shadow-md: 0 4px 8px rgba(82, 101, 225, 0.1);
+    --shadow-lg: 0 8px 16px rgba(82, 101, 225, 0.1);
 }
+
 /* GENERAL */
 
 body {
@@ -76,6 +77,19 @@ h2 {
     font-size: var(--font-size-xl);
     color: var(--dark-blue);
     margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+h3 {
+    font-size: var(--font-size-lg);
+    color: var(--dark-blue);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+h4 {
+    font-size: var(--font-size-md);
+    color: var(--dark-blue);
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
     text-align: center;
 }
 p {
@@ -127,27 +141,21 @@ p {
     color: var(--dark-red);
 }
 
-/* Botón de Login */
-.login button {
-    background-color: var(--dark-red);
-    border: 2px solid var(--dark-red);
+/* Botón de Interacción */
+.btn-interaction{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: 2px solid var(--secondary-color);
     padding: var(--spacing-xs) var(--spacing-md);
     cursor: pointer;
     border-radius: var(--border-radius-sm);
 }
-.login button:hover {
+.btn-interaction:hover {
     background-color: var(--background-color);
-    border: 2px solid var(--dark-red);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     cursor: pointer;
     border-radius: var(--border-radius-sm);
-}
-.login button a {
-    color:  var(--background-color);
-    text-decoration: none;
-}
-.login button:hover a {
-    color: var(--dark-red);
-    text-decoration: none;
 }
 .mobile-menu {
     display: none; /* Ocultar en pantallas grandes */
@@ -316,8 +324,9 @@ p {
     z-index: -1;
 }
 
-.resume p {
+.article-resume p, .ads-resume p, .faq-resume {
     max-width: 500px;
+    text-align: center;
 }
 
 /* Navegación */
@@ -415,3 +424,99 @@ p {
 
 /* ADS */
 
+.container-ads {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: var(--spacing-xxl); 
+    margin: 0 auto;
+}
+
+.browsers {
+    display: flex;
+    gap: var(--spacing-xxl);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.browser-chrome {
+    margin-top: 0;
+}
+
+.browser-firefox {
+    margin-top: 5%;
+}
+
+.browser-opera {
+    margin-top: 10%;
+}
+
+.browser-chrome, .browser-firefox, .browser-opera {
+    background-color: var(--background-color);
+    border: 1px solid var(--super-light-gray);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.browser-chrome h3, .browser-firefox h3, .browser-opera h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.browser-chrome p, .browser-firefox p, .browser-opera p {
+    margin-top: var(--spacing-none);
+}
+
+.ads-divider {
+    width: 100%;
+    
+}
+
+.browser-chrome img, .browser-firefox img, .browser-opera img {
+    width: 100px;
+    height: auto;
+    margin-bottom: var(--spacing-sm);
+}
+
+.ads-btn {
+    background-color: var(--primary-color);
+    color: var(--full-white);
+    border: 2px solid var(--primary-color);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-medium);
+} 
+
+.ads-btn:hover {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    font-weight: var(--font-weight-medium);
+}
+
+/* FAQ */
+
+.container-faq {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-xxl); 
+    margin: 0 auto;
+}
+
+/* JOIN */
+.container-join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-lg); 
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
