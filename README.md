@@ -22,6 +22,7 @@ Este proyecto muestra la evolución de una página web a través de diferentes t
    cd web-evolution-project
 
 ## 1. HTML only
+![HTML only](./assets/1.1\HTML\only.gif)
 
 ## 2. HTML and CSS (v1)
 
