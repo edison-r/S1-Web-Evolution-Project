@@ -528,13 +528,14 @@ p {
     filter: brightness(0.8) contrast(1.2);
 }
 
-/* MENÚ PARA MOVILES */
+/* MOVILES */
 
 @media (max-width: 900px) {
     p {
         text-align: center;
     }
 
+    /* MENÚ */
     .header__container {
         display: none;
     }
@@ -573,6 +574,7 @@ p {
         background-color: var(--dark-blue-transparent);
         top: 60px;
         padding: var(--spacing-md);
+        z-index: 1;
     }
     .mobile__menu.active {
         display: flex;
@@ -617,17 +619,53 @@ p {
         display: block;
     }
     
+    /* ARTICULOS */
     .article {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .article img {
         width: 80%;
-        margin-bottom: 1.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .article-decorative-content {
+        position: absolute;
+        width: 70%;
+        height: 35%;
+        background-color: var(--primary-color);
+        border-radius: 0 50% 50% 0;
+        left: 0;
+        bottom: 25%;
+        z-index: -1;
+    }
+
+    .article h2 {
+        text-align: center;
     }
 
     .article p {
-        margin: 0 auto;
+        margin: 0 auto var(--spacing-md);
+        max-width: 80%;
     }
+
+    /* ADS */
+    .container-ads {
+        display: flex;
+        gap: var(--spacing-sm);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .browsers {
+        width: 250px;
+        flex-grow: 1;
+        gap: var(--spacing-sm);
+    }
+
+    .ads-btn {
+        padding: var(--spacing-xs) var(--spacing-xs);
+    } 
 }
