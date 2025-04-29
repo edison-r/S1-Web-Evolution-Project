@@ -10,7 +10,7 @@
     --super-light-gray: #ededed;
     --dark-gray: #777777;
     --dark-blue: #242946;
-    --dark-blue-transparent: rgba(36, 41, 70, 0.95);
+    --dark-blue-transparent: rgba(36, 41, 70, 0.98);
     --transparent-grey: rgba(255, 255, 255, 0.15);
 
     /* TYPO */
@@ -138,8 +138,12 @@ p {
     color: var(--dark-gray);
 }
 
-.header__menu a:hover{
+.header__menu a:hover {
     color: var(--secondary-color);
+}
+
+.header__login {
+    margin-left: var(--spacing-lg);
 }
 
 .header__mobile {
@@ -209,7 +213,7 @@ p {
 
 /* MAIN -  ARTÍCULOS */
 
-.container-articles {
+.articles__container {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -217,10 +221,10 @@ p {
     text-align: center;
 }
 
-.article-decorative-content {
+.article__decorative-content {
     position: absolute;
     width: 40%;
-    height: 40%;
+    height: 45%;
     background-color: var(--primary-color);
     border-radius: 0 50% 50% 0;
     left: 0;
@@ -257,14 +261,17 @@ p {
 
 .articles-nav a:hover {
     color: var(--secondary-color);
+    cursor: pointer;
 }
-.articles-nav a.active-tab {
+.articles-nav a.active {
+    color: var(--secondary-color);
     border-bottom: 3px solid var(--secondary-color);
     border-color: var(--secondary-color);
 }
 
 /* Artículos */
 .article {
+    height: 450px;
     display: none;
     align-items: center;
     justify-content: space-around;
@@ -275,6 +282,19 @@ p {
 
 .article.active {
     display: flex;
+    animation-duration: 1s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 70%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
 }
 
 .article img {
@@ -465,27 +485,36 @@ p {
         text-align: center;
     }
 
+    .no-scroll {
+        overflow: hidden;
+    }
+    
     /* MENÚ */
     .header__container {
         display: none;
     }
+
     .header__logo--mobile img {
         height: 30px;
     }
+
     .header__mobile{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: var(--spacing-md) var(--spacing-lg);
     }
+
     .mobile__menu--close {
         display: none;
         align-items: center;
         justify-content: center;
         cursor: pointer;
     }
+
     .mobile__menu--close.active {
         display: flex;
+        z-index: 2;
     }
     .mobile__menu--open {
         display: flex;
@@ -493,28 +522,42 @@ p {
         justify-content: center;
         cursor: pointer;
     }
+
     .mobile__menu--open.active {
         display: none;
     }
+
     .mobile__menu {
         display: none;
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
         flex-direction: column;
         width: 100%;
+        height: 100%;
         background-color: var(--dark-blue-transparent);
-        top: 60px;
-        padding: var(--spacing-md);
+        padding: var(--spacing-lg);
         z-index: 1;
     }
+
     .mobile__menu.active {
         display: flex;
     }
+
+    .header__logo--mobilemenu img {
+        height: 30px;
+        top: 0;
+        left: 0;
+    }
+
     .mobile__menu .header__menu {
         flex-direction: column;
         align-items: center;
-    }
-    .mobile__menu.header__menu li {
-        margin: var(--spacing-sm) 0;
+        justify-content: center;
+        gap: var(--spacing-lg);
+        margin: 0;
+        padding: var(--spacing-none);
+        width: 100%;
     }
 
     /* BANNER  */
@@ -550,26 +593,36 @@ p {
     }
     
     /* ARTICULOS */
-    .article {
+    .articles__container {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
 
-    .article img {
-        width: 80%;
-        margin-bottom: var(--spacing-md);
+    .article {
+        position: relative;
+        height: 600px;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
     }
 
-    .article-decorative-content {
+    .article__decorative-content {
         position: absolute;
-        width: 70%;
-        height: 35%;
+        width: 50%;
+        height: 40%;
         background-color: var(--primary-color);
         border-radius: 0 50% 50% 0;
         left: 0;
-        bottom: 25%;
+        bottom: 20%;
         z-index: -1;
+    }
+
+    .article img {
+        width: 80%;
+        margin-bottom: var(--spacing-md);
     }
 
     .article h2 {
