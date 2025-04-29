@@ -20,9 +20,12 @@ El proyecto consta de tres partes, cada una utilizando diferentes tecnologías p
 
 ## Estructura del Proyecto
 
-- **Parte 1: HTML y CSS Vanilla** 🚧 _en proceso_
+- **Parte 1: HTML y CSS Vanilla** 
   - Carpeta: `img`
   - Archivos: `index.html`, `styles.css`, `main.js`, `README.md`
+- **Parte 2: refactorizando con SASS 🚧 _en proceso_
+  - Carpetas: `img`: recursos / `css`: css puro hecho en vanilla / `sass`: componentes de SASS / `sass/atoms`: Componentes modularizados
+  - Archivos:  `index.html`, `styles.css`, `main.js`, `README.md`, `main.scss`, `main.css`
 
 ## Instrucciones de Uso
 
