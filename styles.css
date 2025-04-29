@@ -176,33 +176,44 @@ p {
 }
 /* BANNER */
 
-.container-banner {
+.banner__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-xxl); /* Añade espacio alrededor del contenedor */
+    padding: var(--spacing-xxl);
     margin: 0 auto;
 }
 
-.banner-info {
+.banner__decorative-content {
+    position: absolute;
+    width: 35%;
+    height: 65%;
+    background-color: var(--primary-color);
+    border-radius: 40% 0 0 40%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner__info {
     flex: 1;
     margin-right: 40px;
 }
 
-.banner-text {
+.banner__text {
     margin-bottom: 20px;
 }
 
-.banner-text h1 {
+.banner__text h1 {
     color: #333;
     margin-bottom: 10px;
 }
 
-.banner-text p {
+.banner__text p {
     max-width: 500px;
 }
 
-.banner-btn {
+.banner__btn {
     display: flex;
     gap: 15px;
 }
@@ -213,24 +224,24 @@ p {
     padding: var(--spacing-xs) var(--spacing-sm); 
 }
 
-.btn-chrome {
+.btn__chrome {
     background-color: var(--primary-color);
     color: var(--background-color);
     border: 2px solid var(--primary-color);
 }
 
-.btn-chrome:hover {
+.btn__chrome:hover {
     background-color: var(--background-color);
     color: var(--primary-color);
 }
 
-.btn-firefox {
+.btn__firefox {
     background-color: var(--super-light-gray);
     color: var(--dark-gray);
     border: 2px solid var(--super-light-gray);
 }
 
-.btn-firefox:hover {
+.btn__firefox:hover {
     background-color: var(--background-color);
     border: 2px solid var(--dark-gray);
 }
@@ -239,16 +250,6 @@ p {
     position: relative;
 }
 
-.banner-decorative-content {
-    position: absolute;
-    width: 35%;
-    height: 65%;
-    background-color: var(--primary-color);
-    border-radius: 40% 0 0 40%;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
 .banner-image {
     flex: 1;
     max-width: 500px;
@@ -668,4 +669,5 @@ p {
     .ads-btn {
         padding: var(--spacing-xs) var(--spacing-xs);
     } 
+    
 }
