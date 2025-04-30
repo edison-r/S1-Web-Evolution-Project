@@ -1,0 +1,48 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+/* GENERAL */
+body {
+    font-family: v.$font-family-base;
+    @include m.font-settings(v.$font-size-sm, v.$light-gray);
+    background-color: v.$background-color;
+    max-width: v.$max-width; /* Ancho máximo */
+    margin: 0 auto; /* Para centrarlo horizontalmente */
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    @include m.font-settings(v.$font-size-xxl, v.$dark-blue, v.$spacing-md);
+}
+
+h2 {
+    @include m.font-settings(v.$font-size-xl, v.$dark-blue, v.$spacing-md);
+    @include m.center-text;
+}
+
+h3 {
+    @include m.font-settings(v.$font-size-lg, v.$dark-blue, v.$spacing-md);
+    @include m.center-text;
+}
+
+h4 {
+    @include m.font-settings(v.$font-size-md, v.$dark-blue);
+    @include m.margin-settings(v.$spacing-xs, v.$spacing-xs);
+    @include m.center-text;
+}
+
+p {
+    @include m.font-settings(v.$font-size-md, v.$light-gray, v.$spacing-lg);
+    line-height: 25px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

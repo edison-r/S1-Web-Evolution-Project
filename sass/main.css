@@ -1,9 +1,67 @@
+@charset "UTF-8";
 @import '/css/styles.css';
 /* COLORS */
 /* TYPO */
 /* SPACING */
 /* BUTTONS */
 /* SHADOWS */
+/* GENERAL */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #9194a1;
+  background-color: #f4f4f9;
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Para centrarlo horizontalmente */
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 38px;
+  color: #242946;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #242946;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  color: #242946;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  color: #242946;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #9194a1;
+  margin-bottom: 40px;
+  line-height: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn {
   border: 2px solid;
   padding: 10px 20px;

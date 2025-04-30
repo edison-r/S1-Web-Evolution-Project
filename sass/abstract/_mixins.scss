@@ -1,0 +1,23 @@
+@mixin font-settings($size, $color, $margin-bottom: null, $text-align: null) {
+    font-size: $size;
+    color: $color;
+    @if $margin-bottom != null {
+        margin-bottom: $margin-bottom;
+    }
+    @if $text-align != null {
+        text-align: $text-align;
+    }
+}
+
+@mixin center-text {
+    text-align: center;
+}
+
+@mixin margin-settings($margin-top: null, $margi-bottom: null) {
+    @if $margin-top != null {
+        margin-top: $margin-top;
+    }
+    @if $margi-bottom != null {
+        margin-bottom: $margi-bottom;
+    }
+}
