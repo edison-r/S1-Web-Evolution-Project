@@ -23,9 +23,10 @@ El proyecto consta de tres partes, cada una utilizando diferentes tecnologías p
 - **Parte 1: HTML y CSS Vanilla** 
   - Carpeta: `img`
   - Archivos: `index.html`, `styles.css`, `main.js`, `README.md`
-- **Parte 2: refactorizando con SASS 🚧 _en proceso_
+- **Parte 2: Refactorizando con SASS 
   - Carpetas: `img`: recursos / `css`: css puro hecho en vanilla / `sass`: componentes de SASS / `sass/atoms`: Componentes modularizados
   - Archivos:  `index.html`, `styles.css`, `main.js`, `README.md`, `main.scss`, `main.css`
+- **Parte 3: Usando librerías, aprendiendo TailwindCSS 🚧 _en proceso_
 
 ## Instrucciones de Uso
 
