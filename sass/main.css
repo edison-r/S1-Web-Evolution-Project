@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import '/css/styles.css';
+/* COLORS */
+/* TYPO */
+/* SPACING */
+/* BUTTONS */
+/* SHADOWS */
+/* GENERAL */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #9194a1;
+  background-color: #f4f4f9;
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Para centrarlo horizontalmente */
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 38px;
+  color: #242946;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #242946;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  color: #242946;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  color: #242946;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #9194a1;
+  margin-bottom: 40px;
+  line-height: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  border: 2px solid;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn__primary {
+  background-color: #5265E1;
+  color: #f4f4f9;
+  border-color: #5265E1;
+}
+.btn__primary:hover {
+  background-color: #f4f4f9;
+  color: #5265E1;
+}
+.btn__secondary {
+  background-color: #ededed;
+  color: #777777;
+  border-color: #ededed;
+  box-shadow: 0 4px 8px rgba(82, 101, 225, 0.1);
+}
+.btn__secondary:hover {
+  background-color: #f4f4f9;
+  color: #777777;
+  border-color: #9194a1;
+}
+.btn__interaction {
+  background-color: #FA5959;
+  color: #f4f4f9;
+  border-color: #FA5959;
+  padding: 10px 30px;
+}
+.btn__interaction:hover {
+  background-color: #f4f4f9;
+  color: #FA5959;
+}
+.btn__interaction--mobile {
+  background-color: rgba(36, 41, 70, 0.95);
+  color: #ffffff;
+  border-color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 8px;
+}
+.btn__interaction--mobile:hover {
+  background-color: #f4f4f9;
+  color: rgba(36, 41, 70, 0.95);
+  border-color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

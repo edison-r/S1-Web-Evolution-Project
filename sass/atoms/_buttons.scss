@@ -1,0 +1,62 @@
+@use '../abstract/variables' as v;
+
+.btn {
+    border: 2px solid;
+    padding: v.$spacing-xs v.$spacing-sm;
+    cursor: pointer;
+    border-radius: v.$border-radius-sm;
+    font-weight: v.$font-weight-medium;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &__primary {
+        background-color: v.$primary-color;
+        color: v.$background-color;
+        border-color: v.$primary-color;
+
+        &:hover {
+            background-color: v.$background-color;
+            color: v.$primary-color;
+        }
+    }
+
+    &__secondary {
+        background-color: v.$super-light-gray;
+        color: v.$dark-gray;
+        border-color: v.$super-light-gray;
+        box-shadow: v.$shadow-md;
+
+        &:hover {
+            background-color: v.$background-color;
+            color: v.$dark-gray;
+            border-color: v.$light-gray;
+        }
+    }
+
+    &__interaction {
+        background-color: v.$secondary-color;
+        color: v.$background-color;
+        border-color: v.$secondary-color;
+        padding: v.$spacing-xs v.$spacing-md;
+
+        &:hover {
+            background-color: v.$background-color;
+            color: v.$secondary-color;
+        }
+    }
+
+    &__interaction--mobile {
+        background-color: v.$dark-blue-transparent;
+        color: v.$full-white;
+        border-color: v.$full-white;
+        padding: v.$spacing-xs v.$spacing-lg;
+        border-radius: v.$border-radius-md;
+
+        &:hover {
+            background-color: v.$background-color;
+            color: v.$dark-blue-transparent;
+            border-color: v.$full-white;
+        }
+    }
+
+}

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="sass/main.css">
 </head>
 <body>
     <!-- menu navigation -->
@@ -25,7 +25,7 @@
                 </ul>
             </nav>
             <div class="header__login">
-                <button class="btn__interaction">LOGIN</button>
+                <button class="btn btn__interaction">LOGIN</button>
             </div>
         </div>
     <!-- menu movil -->
@@ -33,21 +33,24 @@
             <div class="header__logo--mobile">
                 <a href="index.html"><img src="/img/logo-bookmark.svg" alt="Logo de Bookmark"></a>
             </div>
-            <a href="#" class="mobile__menu--open">
+            <a class="mobile__menu--open">
                 <img src="/img/icon-hamburger.svg" alt="Abrir menu">
             </a>
-            <a href="#" class="mobile__menu--close">
+            <a class="mobile__menu--close">
                 <img src="/img/icon-close.svg" alt="Cerrar menu">
             </a>
             <nav class="mobile__menu">
+                <div class="header__logo--mobilemenu">
+                    <a href="index.html"><img src="/img/logo-bookmark-white.svg" alt="Logo de Bookmark"></a>
+                </div>
                 <ul class="header__menu">
                     <li class="header__menu-item"><a href="#">FEATURES</a></li>
                     <li class="header__menu-item"><a href="#">PRICING</a></li>
                     <li class="header__menu-item"><a href="#">CONTACT</a></li>
+                    <div class="mobile__login">
+                        <button class="btn btn__interaction--mobile">LOGIN</button>
+                    </div>
                 </ul>
-                <div class="mobile__login">
-                    <button class="btn__interaction--mobile">LOGIN</button>
-                </div>
             </nav>
         </div>
 
@@ -61,8 +64,8 @@
                         a new browser tab and see your sites load instantly. Try it for free.</p>
                 </div>
                 <div class="banner__btn">
-                    <a href="https://www.google.com/intl/es_es/chrome/" target="_blank" class="btn__chrome">Get it on Chrome</a>
-                    <a href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank" class="btn__firefox">Get it on Firefox</a>
+                    <a href="https://www.google.com/intl/es_es/chrome/" target="_blank" class="btn btn__primary">Get it on Chrome</a>
+                    <a href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank" class="btn btn__secondary">Get it on Firefox</a>
                 </div>
             </div>
                 <div class="banner-image">
@@ -74,8 +77,8 @@
     <!-- main -->
     <main>
         <!-- artículos -->
-        <div class="container-articles">
-            <div class="article-decorative-content"></div>
+        <div class="articles__container">
+            <div class="article__decorative-content"></div>
             <div class="article-resume">
                 <h2>Features</h2>
                 <p> Our aim is to make it quick and easy for you to access your
@@ -84,9 +87,9 @@
             </div>
             <nav class="articles-nav">
                 <ul>
-                    <li><a href="#article1" class="active">Simple Bookmarking</a></li>
-                    <li><a href="#article2">Speedy Searching</a></li>
-                    <li><a href="#article3">Easy Sharing</a></li>
+                    <li><a class="active" id="tab1">Simple Bookmarking</a></li>
+                    <li><a id="tab2">Speedy Searching</a></li>
+                    <li><a id="tab3">Easy Sharing</a></li>
                 </ul>
             </nav>
             <div class="article active" id="article1">
@@ -96,7 +99,7 @@
                     <p> Organize your Bookmarks however you like. Our simple drag-and-drop
                         interface gives you complete control over how you manage your
                         favourite sites.</p>
-                    <a href="#">More info</a>
+                    <a class="btn btn__primary" href="#">More info</a>
                 </div>
             </div>
             <div class="article" id="article2">
@@ -105,7 +108,7 @@
                     <h2>Intelligent search</h2>
                     <p>Our powerfull search feature will help you find saved sites in no time at all.
                         No need to trawl through all of your bookmarks.</p>
-                    <a href="#">More info</a>
+                    <a class="btn btn__primary" href="#">More info</a>
                 </div>
             </div>
             <div class="article" id="article3">
@@ -114,7 +117,7 @@
                     <h2>Share your bookmarks</h2>
                     <p>Easily share your bookmarks and collections with others. 
                         Create a shareable link that you can send at the click of a button.</p>
-                    <a href="#">More info</a>
+                    <a class="btn btn__primary" href="#">More info</a>
                 </div>
             </div>
         </div>
@@ -131,19 +134,19 @@
                     <img src="/img/logo-chrome.svg" alt="Logo de Chrome">
                     <h3>Add to Chrome</h3>
                     <p>Minimum version 62</p>
-                    <a href="#" class="ads-btn">Add & Install Extension</a>
+                    <a href="#" class="btn btn__primary">Add & Install Extension</a>
                 </div>
                 <div class="browser-firefox">
                     <img src="/img/logo-firefox.svg" alt="Logo de Firefox">
                     <h3>Add to Firefox</h3>
                     <p>Minimum version 55</p>                  
-                    <a href="#" class="ads-btn">Add & Install Extension</a>
+                    <a href="#" class="btn btn__primary">Add & Install Extension</a>
                 </div>
                 <div class="browser-opera">
                     <img src="/img/logo-opera.svg" alt="Logo de Opera">
                     <h3>Add to Opera</h3>
                     <p>Minimum version 46</p>
-                    <a href="#" class="ads-btn">Add & Install Extension</a>
+                    <a href="#" class="btn btn__primary">Add & Install Extension</a>
                 </div>
             </div>
         </div>
@@ -173,6 +176,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
                 </div>
             </div>
+            <a class="btn btn__primary" href="#">More info</a>
         </div>  
 
         <!-- join -->
@@ -183,7 +187,7 @@
             </div>
             <div class="join-form">
                 <input type="email" placeholder="Enter your email address" required="" aria-label="Email address">
-                <button class="btn__interaction" type="submit">Contact us</button>
+                <button class="btn btn__interaction" type="submit">Contact us</button>
             </div>
         </div>
     </main>
