@@ -310,6 +310,9 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .list-disc {
     list-style-type: disc;
   }
@@ -373,9 +376,7 @@
   .border-slate-200 {
     border-color: var(--color-slate-200);
   }
-  .bg-\[\#2A263\] {
-    background-color: #2A263;
-  }
+
   .bg-\[\#2A2634\] {
     background-color: #2A2634;
   }
@@ -477,9 +478,6 @@
   }
   .\!text-white {
     color: var(--color-white) !important;
-  }
-  .text-\[\#24\] {
-    color: #24;
   }
   .text-\[\#242946\] {
     color: #242946;
