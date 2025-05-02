@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 });
 
-// Tab functionality for the articles
+// Tab underline functionality for the articles
 document.addEventListener("DOMContentLoaded", function () {
     const tab1 = document.getElementById("tab1");
     const tab2 = document.getElementById("tab2");
@@ -76,3 +76,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     );
 });
+
+// Accordion functionality

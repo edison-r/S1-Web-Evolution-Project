@@ -334,17 +334,6 @@
     font-weight: var(--font-weight-medium);
 }
 
-/* FAQ */
-
-.container-faq {
-    display: flex;
-    gap: var(--spacing-sm);
-    flex-direction: column;
-    align-items: center;
-    padding: var(--spacing-xxl); 
-    margin: 0 auto;
-}
-
 /* MOVILES */
 
 @media (max-width: 900px) {
