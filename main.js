@@ -79,35 +79,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Accordion functionality
 document.addEventListener("DOMContentLoaded", function () {
-    // Paso 1: Seleccionamos todos los botones de pregunta
     const questions = document.querySelectorAll(".faq__question");
 
     questions.forEach((question) => {
         question.addEventListener("click", function () {
-            // Paso 2: Localizamos el contenedor padre (faq__item)
             const faqItem = this.closest(".faq__item");
-
-            // Paso 3: Localizamos la respuesta y el icono dentro de ese bloque
             const answer = faqItem.querySelector(".faq__answer");
             const icon = faqItem.querySelector(".faq__icon");
 
-            // Paso 4: Alternamos (mostrar/ocultar) la respuesta
-            answer.classList.toggle("hidden");
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== "0px";
 
-            // Paso 5: Rotamos el icono si está abierto
-            icon.classList.toggle("rotate-180");
-
-            // Paso 6: (opcional) cerrar otros acordeones abiertos
-            questions.forEach((otherQuestion) => {
-                if (otherQuestion !== this) {
-                    const otherItem = otherQuestion.closest(".faq__item");
-                    const otherAnswer = otherItem.querySelector(".faq__answer");
-                    const otherIcon = otherItem.querySelector(".faq__icon");
-
-                    otherAnswer.classList.add("hidden");
-                    otherIcon.classList.remove("rotate-180");
-                }
+            // Cierra todas las respuestas
+            document.querySelectorAll(".faq__answer").forEach(p => {
+                p.style.maxHeight = null;
             });
+            document.querySelectorAll(".faq__icon").forEach(i => {
+                i.classList.remove("rotate-180");
+            });
+
+            // Si no estaba abierta, la abrimos
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.classList.add("rotate-180");
+            }
         });
     });
 });
