@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^4.1.5"
+  },
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.5"
+  },
+  "name": "edison-r-s1-web-evolution-project",
+  "version": "1.0.0",
+  "description": "Este proyecto muestra la evolución de una página web a través de diferentes tecnologías y enfoques de estilos CSS.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edison-r/edison-r-S1-Web-Evolution-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edison-r/edison-r-S1-Web-Evolution-Project/issues"
+  },
+  "homepage": "https://github.com/edison-r/edison-r-S1-Web-Evolution-Project#readme"
+}
