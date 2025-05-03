@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 });
 
-// Tab functionality for the articles
+// Tab underline functionality for the articles
 document.addEventListener("DOMContentLoaded", function () {
     const tab1 = document.getElementById("tab1");
     const tab2 = document.getElementById("tab2");
@@ -75,4 +75,33 @@ document.addEventListener("DOMContentLoaded", function () {
         article3.classList.add("active");
     }
     );
+});
+
+// Accordion functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const questions = document.querySelectorAll(".faq__question");
+
+    questions.forEach((question) => {
+        question.addEventListener("click", function () {
+            const faqItem = this.closest(".faq__item");
+            const answer = faqItem.querySelector(".faq__answer");
+            const icon = faqItem.querySelector(".faq__icon");
+
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== "0px";
+
+            // Cierra todas las respuestas
+            document.querySelectorAll(".faq__answer").forEach(p => {
+                p.style.maxHeight = null;
+            });
+            document.querySelectorAll(".faq__icon").forEach(i => {
+                i.classList.remove("rotate-180");
+            });
+
+            // Si no estaba abierta, la abrimos
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.classList.add("rotate-180");
+            }
+        });
+    });
 });

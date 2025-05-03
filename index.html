@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <link href="/dist/output.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- menu navigation -->
@@ -117,7 +119,7 @@
                     <h2>Share your bookmarks</h2>
                     <p>Easily share your bookmarks and collections with others. 
                         Create a shareable link that you can send at the click of a button.</p>
-                    <a class="btn btn__primary" href="#">More info</a>
+                    <a class="btn btn__primary">More info</a>
                 </div>
             </div>
         </div>
@@ -131,62 +133,79 @@
             </div>
             <div class="browsers">
                 <div class="browser-chrome">
-                    <img src="/img/logo-chrome.svg" alt="Logo de Chrome">
+                    <img class="image__add" src="/img/logo-chrome.svg" alt="Logo de Chrome">
                     <h3>Add to Chrome</h3>
                     <p>Minimum version 62</p>
-                    <a href="#" class="btn btn__primary">Add & Install Extension</a>
+                    <a class="btn btn__primary">Add & Install Extension</a>
                 </div>
                 <div class="browser-firefox">
-                    <img src="/img/logo-firefox.svg" alt="Logo de Firefox">
+                    <img class="image__add" src="/img/logo-firefox.svg" alt="Logo de Firefox">
                     <h3>Add to Firefox</h3>
                     <p>Minimum version 55</p>                  
-                    <a href="#" class="btn btn__primary">Add & Install Extension</a>
+                    <a class="btn btn__primary">Add & Install Extension</a>
                 </div>
                 <div class="browser-opera">
-                    <img src="/img/logo-opera.svg" alt="Logo de Opera">
+                    <img class="image__add" src="/img/logo-opera.svg" alt="Logo de Opera">
                     <h3>Add to Opera</h3>
                     <p>Minimum version 46</p>
-                    <a href="#" class="btn btn__primary">Add & Install Extension</a>
+                    <a class="btn btn__primary">Add & Install Extension</a>
                 </div>
             </div>
         </div>
 
         <!-- faq -->
-        <div class="container-faq">
-            <div class="faq-resume">
+        <div class="flex gap-5 flex-col items-center px-16 py-10 mx-0 my-auto">
+            <div class="faq__resume">
                 <h2>Frequently Asked Questions</h2>
-                <p>Here are some of our FAQs. If you have any other questions you’d like
+                <p class="!mb-5">Here are some of our FAQs. If you have any other questions you’d like
                     answered please feel free to email us.</p>
             </div>
-            <div class="faq-questions">
-                <div class="question">
-                    <h3>What is Bookmark?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <div class="faq__container w-[500px]">
+                <div class="faq__item border-b border-gray-300">
+                    <button class="faq__question cursor-pointer w-full !mt-5 text-xl font-medium text-[#242946]">
+                        <div class="flex items-center justify-between active">
+                            <span class="mb-5 hover:text-[#FA5959]">What is Bookmark?</span>
+                            <img class="faq__icon transition-transform duration-500" src="/img/icon-arrow.svg" alt="Icono de flecha"></img>
+                        </div>
+                    </button>
+                    <p class="faq__answer !mb-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
                 </div>
-                <div class="faq-item">
-                    <h3>How can I request a new browser?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Is there a mobile app?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What about other Chromium browsers?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </div>
+                <div class="faq__item border-b border-gray-300">
+                    <button class="faq__question cursor-pointer w-full !mt-5 text-xl font-medium text-[#242946]">
+                        <div class="flex items-center justify-between">
+                            <span class="mb-5 hover:text-[#FA5959]">How can I request a new browser?</span>
+                            <img class="faq__icon transition-transform duration-500" src="/img/icon-arrow.svg" alt="Icono de flecha"></img>
+                        </div>
+                    </button>
+                    <p class="faq__answer !mb-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>                </div>
+                <div class="faq__item border-b border-gray-300">
+                    <button class="faq__question cursor-pointer w-full !mt-5 text-xl font-medium text-[#242946]">
+                        <div class="flex items-center justify-between">
+                            <span class="mb-5 hover:text-[#FA5959]">Is there a mobile app?</span>
+                            <img class="faq__icon transition-transform duration-500" src="/img/icon-arrow.svg" alt="Icono de flecha"></img>
+                        </div>
+                    </button>
+                    <p class="faq__answer !mb-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>                </div>
+                <div class="faq__item border-b border-gray-300">
+                    <button class="faq__question cursor-pointer w-full !mt-5 text-xl font-medium text-[#242946]">
+                        <div class="flex items-center justify-between">
+                            <span class="mb-5 hover:text-[#FA5959]">What about other Chromium browsers?</span>
+                            <img class="faq__icon transition-transform duration-500" src="/img/icon-arrow.svg" alt="Icono de flecha"></img>
+                        </div>
+                    </button>
+                    <p class="faq__answer !mb-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>                </div>
             </div>
-            <a class="btn btn__primary" href="#">More info</a>
-        </div>  
+            <a class="btn btn__primary mt-5">More info</a>
+        </div>
 
         <!-- join -->
-        <div class="container-join">
-            <div class="join-resume">
-                <h4>35,000+ ALREADY JOINED</h4>
-                <h2>Stay up-to-date with what we're doing</h2>
+        <div class="flex flex-col items-center p-7 text-center bg-[#5265E1]">
+            <div class="mb-5">
+                <h4 class="!text-white font-normal">35,000+ ALREADY JOINED</h4>
+                <h2 class="!text-white">Stay up-to-date with what we're doing</h2>
             </div>
-            <div class="join-form">
-                <input type="email" placeholder="Enter your email address" required="" aria-label="Email address">
+            <div class="flex gap-5 w-full max-w-[500px]">
+                <input class="flex-grow-1 rounded-sm border-none shadow-lg p-2 text-[#242946] bg-[#f4f4f9]" type="email" placeholder="Enter your email address" required="" aria-label="Email address">
                 <button class="btn btn__interaction" type="submit">Contact us</button>
             </div>
         </div>
@@ -194,18 +213,16 @@
 
     <!-- footer -->
     <footer>
-        <div class="container-footer">
-            <div class="footer-logo">
-                <a href="index.html"><img src="/img/logo-bookmark-white.svg" alt="Logo de Bookmark"></a>
-            </div>
-            <nav class="footer-nav">
-                <ul class="footer-all">
-                    <li class="footer-opt"><a href="#">FEATURES</a></li>
-                    <li class="footer-opt"><a href="#">PRICING</a></li>
-                    <li class="footer-opt"><a href="#">CONTACT</a></li>
+        <div class="flex items-center justify-between py-1 px-7 gap-5 flex-wrap bg-[#242946]">
+            <a href="index.html"><img class="h-7" src="/img/logo-bookmark-white.svg" alt="Logo de Bookmark"></a>
+            <nav class="flex-grow-1">
+                <ul class="flex m-0 p-0">
+                    <li class="m-7"><a class="text-white hover:text-[#FA5959]" href="#">FEATURES</a></li>
+                    <li class="m-7"><a class="text-white hover:text-[#FA5959]" href="#">PRICING</a></li>
+                    <li class="m-7"><a class="text-white hover:text-[#FA5959]" href="#">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="social">
+            <div class="flex gap-7">
                 <a href="#"><img src="/img/icon-facebook.svg" alt="Facebook"></a>
                 <a href="#"><img src="/img/icon-twitter.svg" alt="Twitter"></a>
             </div>
