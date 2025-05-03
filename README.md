@@ -26,7 +26,7 @@ El proyecto consta de tres partes, cada una utilizando diferentes tecnologías p
 - **Parte 2: Refactorizando con SASS 
   - Carpetas: `img`: recursos / `css`: css puro hecho en vanilla / `sass`: componentes de SASS / `sass/atoms`: Componentes modularizados
   - Archivos:  `index.html`, `styles.css`, `main.js`, `README.md`, `main.scss`, `main.css`
-- **Parte 3: Usando librerías, aprendiendo TailwindCSS 🚧 _en proceso_
+- **Parte 3: Usando librerías, aprendiendo TailwindCSS
   - Carpetas `img`: recursos / `css`: css puro hecho en vanilla / `sass`: componentes de SASS / `src`: input.css donde se importa TailwindCSS / `dist`: output de TailwindCSS
   - Archivos `README.md`, `index.html`, `main.js`, `styles.css`: css puro hecho en vanilla, `main.scss`: input de SASS, `main.css`: output de SASS, `output.css`: output de TailwindCSS
 
