@@ -100,7 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-xxl);
+    padding: var(--spacing-lg) var(--spacing-xxl);
     margin: 0 auto;
 }
 
@@ -160,7 +160,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-xxl);
+    padding: var(--spacing-lg) var(--spacing-xxl);
     text-align: center;
 }
 
@@ -264,7 +264,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: var(--spacing-xxl); 
+    padding: var(--spacing-lg) var(--spacing-xxl);
     margin: 0 auto;
 }
 

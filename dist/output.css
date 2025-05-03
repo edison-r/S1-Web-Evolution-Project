@@ -376,7 +376,9 @@
   .border-slate-200 {
     border-color: var(--color-slate-200);
   }
-
+  .bg-\[\#2A263\] {
+    background-color: #2A263;
+  }
   .bg-\[\#2A2634\] {
     background-color: #2A2634;
   }
@@ -428,11 +430,17 @@
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
+  .px-16 {
+    padding-inline: calc(var(--spacing) * 16);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .ps-5 {
     padding-inline-start: calc(var(--spacing) * 5);
@@ -478,6 +486,9 @@
   }
   .\!text-white {
     color: var(--color-white) !important;
+  }
+  .text-\[\#24\] {
+    color: #24;
   }
   .text-\[\#242946\] {
     color: #242946;
