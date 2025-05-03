@@ -1,4 +1,4 @@
-# SPRINT 1 ⚡️ - Web Evolution Project
+# SPRINT 1 ⚡️ - Web Evolution Project - PARTE 1
 
 Este proyecto muestra la evolución de una página web a través de diferentes tecnologías y enfoques de estilos CSS.
 
@@ -20,12 +20,6 @@ Este proyecto muestra la evolución de una página web a través de diferentes t
    ```bash
    git clone https://github.com/edison-r/S1-Web-Evolution-Project.git
    cd web-evolution-project
-
-## 1. HTML only
-![HTML only](./assets/1.1\HTML\only.gif)
-
-## 2. HTML and CSS (v1)
-
 
 ## To-do list del proyecto
   - Añadir la lógica en js para las partes dinámicas.
