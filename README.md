@@ -41,3 +41,13 @@ El proyecto consta de tres partes, cada una utilizando diferentes tecnologías p
    ```bash
    git clone https://github.com/edison-r/S1-Web-Evolution-Project.git
    cd web-evolution-project
+
+## Diario personal del proyecto
+
+Este proyecto me ha enseñado MUCHO sobre las tecnologías aplicadas.
+
+Inicialmente lo planteé de una manera para hacerlo todo tanto con vanilla como con SASS Y TailwindCSS es decir, tres veces el proyecto por separado. Pero con los tiempos ajustados de entrega finalmente decidí refactorizar partes del proyecto haciendo que las tres tecnologías de CSS usadas convivan. Lo cual, ha sido un GRAN acierto porque esto me ha permitido aprender cómo se puede mezclar diferentes tecnologías en un mismo código. 
+
+En el código hay incoherencias, por ejemplo: hay secciones que en el HTML se usa la metodología BEM pero en otras no. Esto es debido a que he ido implementando mejoras propuestas en los Issues por mi compañera Angeles (¡muchas gracias! 🙏) a ciertas partes del código para poder aprender cómo usarlo pero no lo he implementado todo ya que supone mucho tiempo de refactorización. (Hay más incoherencias pero todo sigue la misma linea, mi objetivo ha sido aprender y no hacer la página "pixel-perfect").
+
+PD: git y github ha sido un rompecabezaaaaas 🧩 PERO lo voy pillando. 
