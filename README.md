@@ -1,4 +1,4 @@
-# SPRINT 1 ⚡️ - Web Evolution Project
+# ⚡️ SPRINT 1 - Web Evolution Project
 
 Este proyecto muestra la evolución de una página web a través de diferentes tecnologías y enfoques de estilos CSS.
 
